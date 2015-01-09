@@ -148,11 +148,13 @@ acceptable_elements = ["a", "abbr", "acronym", "address", "area",
     "u", "ul", "var", "video"]
   
 mathml_elements :: [Text]
-mathml_elements = ["maction", "math", "merror", "mfrac", "mi",
-    "mmultiscripts", "mn", "mo", "mover", "mpadded", "mphantom",
-    "mprescripts", "mroot", "mrow", "mspace", "msqrt", "mstyle", "msub",
-    "msubsup", "msup", "mtable", "mtd", "mtext", "mtr", "munder",
-    "munderover", "none"]
+mathml_elements = ["math", "maction", "maligngroup", "malignmark", "menclose",
+    "merror", "mfenced", "mfrac", "mglyph", "mi", "mlabeledtr", "mlongdiv",
+    "mmultiscripts", "mn", "mo", "mover", "mpadded", "mphanthom", "mroot",
+    "mrow", "ms", "mscarries", "mscarry", "msgroup", "msline", "mspace",
+    "msqrt", "msrow", "mstack", "mstyle", "msub", "msup", "msubsup",
+    "mtable", "mtd", "mtext", "mtr", "munder", "munderover", "semantics",
+    "annotation", "annotation-xml"]
 
 -- this should include altGlyph I think
 svg_elements :: [Text]
@@ -198,15 +200,26 @@ acceptable_protocols = [ "ed2k", "ftp", "http", "https", "irc",
     "ssh", "sftp", "rtsp", "afs" ]
 
 mathml_attributes :: [Text]
-mathml_attributes = ["actiontype", "align", "columnalign", "columnalign",
-    "columnalign", "columnlines", "columnspacing", "columnspan", "depth",
-    "display", "displaystyle", "equalcolumns", "equalrows", "fence",
-    "fontstyle", "fontweight", "frame", "height", "linethickness", "lspace",
-    "mathbackground", "mathcolor", "mathvariant", "mathvariant", "maxsize",
-    "minsize", "other", "rowalign", "rowalign", "rowalign", "rowlines",
-    "rowspacing", "rowspan", "rspace", "scriptlevel", "selection",
-    "separator", "stretchy", "width", "width", "xlink:href", "xlink:show",
-    "xlink:type", "xmlns", "xmlns:xlink"]
+mathml_attributes = ["accent", "accentunder", "actiontype", "align",
+    "alignmentscope", "altimg", "altimg-width", "altimg-height",
+    "altimg-valign", "alttext", "bevelled", "charalign", "close",
+    "columnalign", "columnlines", "columnspacing", "columnspan",
+    "columnwidth", "crossout", "decimalpoint", "denomalign", "depth", "dir",
+    "display", "displaystyle", "edge", "encoding", "equalcolumns", "equalrows",
+    "fence", "form", "frame", "framespacing", "groupalign", "height",
+    "href", "id", "indentalign", "indentalignfirst", "indentaignlast",
+    "identshift", "indentshiftfirst", "indentshiftlast", "indenttarget",
+    "infixlinebreakstyle", "largeop", "lenght", "linebreak",
+    "linebreakmultchar", "linebreakstyle", "lineleading", "linethickness",
+    "location", "longdivstyle", "lspace", "lquote", "mathbackground",
+    "mathcolor", "mathsize", "mathvariant", "maxsize", "minlabelspacing",
+    "minsize", "movablelimits", "notation", "numalign", "open",
+    "overflow", "position", "rowalign", "rowlines", "rowspacing",
+    "rowspan", "rspace", "rquote", "scriptlevel", "scriptminsize",
+    "scriptsizemultiplier", "selection", "separator", "separators",
+    "shift", "side", "src", "stackalign", "stretchy", "subscriptshift",
+    "supscriptshift", "symmetric", "voffset", "width",
+    "xlink:href", "xmlns"]
 
 svg_attributes :: [Text]
 svg_attributes = ["accent-height", "accumulate", "additive", "alphabetic",
